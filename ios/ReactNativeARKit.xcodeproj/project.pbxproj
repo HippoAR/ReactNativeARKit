@@ -16,7 +16,6 @@
 		1017B6EF1F1F384100448C01 /* ARKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1017B6EE1F1F37BB00448C01 /* ARKit.framework */; };
 		1017B6F11F1F386F00448C01 /* SceneKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1017B6F01F1F386B00448C01 /* SceneKit.framework */; };
 		103395791F1DCD1B0070B4BB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 103395771F1DCD130070B4BB /* CoreMotion.framework */; };
-		10A409F81F1672200097898C /* cube.dae in Resources */ = {isa = PBXBuildFile; fileRef = 10A409D91F1672200097898C /* cube.dae */; };
 		10B8CA831F207504003D1F14 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10B8CA641F2074FD003D1F14 /* AVFoundation.framework */; };
 		10CEB5A81F1E3D5700CCE64A /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = 10CEB5881F1E3D5700CCE64A /* art.scnassets */; };
 		133E29F31AD74F7200F7D852 /* libRCTLinking.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 78C398B91ACF4ADC00677621 /* libRCTLinking.a */; };
@@ -286,7 +285,6 @@
 		1017B6EE1F1F37BB00448C01 /* ARKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ARKit.framework; path = System/Library/Frameworks/ARKit.framework; sourceTree = SDKROOT; };
 		1017B6F01F1F386B00448C01 /* SceneKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SceneKit.framework; path = System/Library/Frameworks/SceneKit.framework; sourceTree = SDKROOT; };
 		103395771F1DCD130070B4BB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
-		10A409D91F1672200097898C /* cube.dae */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml.dae; name = cube.dae; path = ReactNativeARKit/cube.dae; sourceTree = "<group>"; };
 		10B8CA641F2074FD003D1F14 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		10CEB5881F1E3D5700CCE64A /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = art.scnassets; path = ReactNativeARKit/art.scnassets; sourceTree = "<group>"; };
 		139105B61AF99BAD00B5F7CC /* RCTSettings.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTSettings.xcodeproj; path = "../node_modules/react-native/Libraries/Settings/RCTSettings.xcodeproj"; sourceTree = "<group>"; };
@@ -471,7 +469,6 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeARKit */ = {
 			isa = PBXGroup;
 			children = (
-				10A409D91F1672200097898C /* cube.dae */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -976,7 +973,6 @@
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				10CEB5A81F1E3D5700CCE64A /* art.scnassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
-				10A409F81F1672200097898C /* cube.dae in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
