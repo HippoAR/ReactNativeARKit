@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { AppRegistry, View } from 'react-native';
 import { ARKit } from 'react-native-arkit';
 
-const color = '#88ff88cc';
+const diffuse = '#88ff88cc';
 
 export default class ReactNativeARKit extends Component {
   render() {
@@ -21,59 +21,59 @@ export default class ReactNativeARKit extends Component {
           <ARKit.Box
             pos={{ x: 0, y: 0, z: 0 }}
             shape={{ width: 0.1, height: 0.1, length: 0.1, chamfer: 0.01 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Sphere
             pos={{ x: 0.2, y: 0, z: 0 }}
             shape={{ radius: 0.05, }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Cylinder
             pos={{ x: 0.4, y: 0, z: 0 }}
             shape={{ radius: 0.05, height: 0.1 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Cone
             pos={{ x: 0, y: 0.2, z: 0 }}
             shape={{ topR: 0, bottomR: 0.05, height: 0.1 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Pyramid
             pos={{ x: 0.2, y: 0.15, z: 0 }}
             shape={{ width: 0.1, height: 0.1, length: 0.1 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Tube
             pos={{ x: 0.4, y: 0.2, z: 0 }}
             shape={{ innerR: 0.03, outerR: 0.05, height: 0.1 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Torus
             pos={{ x: 0, y: 0.4, z: 0 }}
             shape={{ ringR: 0.06, pipeR: 0.02 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Capsule
             pos={{ x: 0.2, y: 0.4, z: 0 }}
             shape={{ capR: 0.02, height: 0.06 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Plane
             pos={{ x: 0.4, y: 0.4, z: 0 }}
             shape={{ width: 0.1, height: 0.1 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Text
             text="ARKit is Cool!"
             pos={{ x: 0.2, y: 0.6, z: 0 }}
             font={{ size: 0.15, depth: 0.05 }}
-            material={{ color }}
+            material={{ diffuse }}
           />
           <ARKit.Text
             text="made by react-native-arkit"
             pos={{ x: 0, y: 0, z: 0, frame: 'FrontOfCamera' }}
             font={{ size: 0.01, depth: 0.002 }}
-            material={{ color: '#0000ff' }}
+            material={{ diffuse: 'blue' }}
           />
           <ARKit.Model
             pos={{ x: -0.2, y: 0, z: 0, frame: 'Local' }}
