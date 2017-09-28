@@ -1,6 +1,6 @@
 # ReactNativeARKit
 
-This is a sample project to demonstrate how to use [`react-native-arkit`](https://raw.githubusercontent.com/HippoAR/react-native-arkit)
+This is a sample project to demonstrate how to use [`react-native-arkit`](https://github.com/HippoAR/react-native-arkit)
 
 **Note**: ARKit is only supported by devices with A9 or later processors (iPhone 6s/7/SE/8/X, iPad 2017/Pro) on **iOS 11**. You also need **Xcode 9** to build the project.
 
