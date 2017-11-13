@@ -3354,9 +3354,9 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-arkit@^0.4.4:
-  version "0.4.4"
-  resolved "https://registry.yarnpkg.com/react-native-arkit/-/react-native-arkit-0.4.4.tgz#4e06ac5d6ace7bb95fd2dc3fd08e47de1a85f325"
+react-native-arkit@^0.4.5:
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/react-native-arkit/-/react-native-arkit-0.4.5.tgz#20e0e68bad8899b56ad9f0e0f17ae75df0d90839"
   dependencies:
     "@panter/react-animation-frame" "^0.3.7"
     "_PocketSVG" "https://github.com/pocketsvg/PocketSVG"
