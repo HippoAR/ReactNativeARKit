@@ -4,35 +4,49 @@ import { ARKit, withProjectedPosition } from 'react-native-arkit';
 import { AppRegistry, Dimensions, View } from 'react-native';
 import React, { Component } from 'react';
 
-const diffuse = '#88ff88';
+const diffuse = 'white';
 
 const PlaneCursor = withProjectedPosition()(({ positionProjected }) => {
   if (!positionProjected) return null;
   return (
-    <ARKit.Torus
-      position={positionProjected}
-      transition={{ duration: 0.1 }}
-      shape={{ ringR: 0.1, pipeR: 0.01 }}
-      material={{
-        lightingModel: ARKit.LightingModel.Constant,
-        color: '#DA1182'
-      }}
-    />
+    <ARKit.Group>
+      <ARKit.Torus
+        position={positionProjected}
+        transition={{ duration: 0.1 }}
+        shape={{ ringR: 0.1, pipeR: 0.01 }}
+        material={{
+          lightingModel: ARKit.LightingModel.Constant,
+          color: '#DA1182'
+        }}
+      />
+      <ARKit.Light
+        position={positionProjected}
+        type={ARKit.LightType.Omni}
+        color="#DA1182"
+      />
+    </ARKit.Group>
   );
 });
 
 const ObjectCursor = withProjectedPosition()(({ positionProjected }) => {
   if (!positionProjected) return null;
   return (
-    <ARKit.Sphere
-      position={positionProjected}
-      transition={{ duration: 0.1 }}
-      shape={{ radius: 0.01 }}
-      material={{
-        lightingModel: ARKit.LightingModel.Constant,
-        color: '#4C92EF'
-      }}
-    />
+    <ARKit.Group>
+      <ARKit.Sphere
+        position={positionProjected}
+        transition={{ duration: 0.1 }}
+        shape={{ radius: 0.01 }}
+        material={{
+          lightingModel: ARKit.LightingModel.Constant,
+          color: '#4C92EF'
+        }}
+      />
+      <ARKit.Light
+        position={positionProjected}
+        type={ARKit.LightType.Omni}
+        color="#4C92EF"
+      />
+    </ARKit.Group>
   );
 });
 
@@ -124,26 +138,19 @@ export default class ReactNativeARKit extends Component {
             position={{ x: -0.2, y: 0, z: 0 }}
             model={{ file: 'art.scnassets/ship.scn', scale: 0.03 }}
           />
-          <ARKit.Light
-            position={{ x: 0, y: 0.3, z: 0 }}
-            type={ARKit.LightType.Spot}
-            eulerAngles={{ x: -Math.PI / 2 }}
-            spotInnerAngle={180}
-            spotOuterAngle={180}
-            color="red"
-          />
-          <ARKit.Light
-            position={{ x: 0, y: 0.3, z: 0 }}
-            type={ARKit.LightType.Spot}
-            eulerAngles={{ x: Math.PI / 2 }}
-            spotInnerAngle={90}
-            spotOuterAngle={180}
-            color="blue"
-          />
+
           <ARKit.Light
             position={{ x: 1, y: 3, z: 2 }}
             type={ARKit.LightType.Omni}
             color="white"
+          />
+          <ARKit.Light
+            position={{ x: 0, y: 1, z: 0 }}
+            type={ARKit.LightType.Spot}
+            eulerAngles={{ x: -Math.PI / 2 }}
+            spotInnerAngle={45}
+            spotOuterAngle={45}
+            color="green"
           />
 
           <PlaneCursor
