@@ -4,7 +4,7 @@ import { ARKit, withProjectedPosition } from 'react-native-arkit';
 import { AppRegistry, Dimensions, View } from 'react-native';
 import React, { Component } from 'react';
 
-const diffuse = '#88ff88cc';
+const diffuse = '#88ff88';
 
 const PlaneCursor = withProjectedPosition()(({ positionProjected }) => {
   if (!positionProjected) return null;
@@ -70,7 +70,7 @@ export default class ReactNativeARKit extends Component {
           />
           <ARKit.Cone
             id="object_4"
-            position={{ x: 0, y: 0.2, z: 0 }}
+            position={{ x: 0.0, y: 0.2, z: 0 }}
             shape={{ topR: 0, bottomR: 0.05, height: 0.1 }}
             material={{ diffuse }}
           />
@@ -107,7 +107,7 @@ export default class ReactNativeARKit extends Component {
           <ARKit.Text
             id="object_11"
             text="ARKit is Cool!"
-            position={{ x: 0.2, y: 0.6, z: 0 }}
+            position={{ x: 0, y: 0.6, z: 0 }}
             eulerAngles={{ y: 3.14 / 6 }}
             font={{ size: 0.15, depth: 0.05 }}
             material={{ diffuse }}
@@ -124,6 +124,28 @@ export default class ReactNativeARKit extends Component {
             position={{ x: -0.2, y: 0, z: 0 }}
             model={{ file: 'art.scnassets/ship.scn', scale: 0.03 }}
           />
+          <ARKit.Light
+            position={{ x: 0, y: 0.3, z: 0 }}
+            type={ARKit.LightType.Spot}
+            eulerAngles={{ x: -Math.PI / 2 }}
+            spotInnerAngle={180}
+            spotOuterAngle={180}
+            color="red"
+          />
+          <ARKit.Light
+            position={{ x: 0, y: 0.3, z: 0 }}
+            type={ARKit.LightType.Spot}
+            eulerAngles={{ x: Math.PI / 2 }}
+            spotInnerAngle={90}
+            spotOuterAngle={180}
+            color="blue"
+          />
+          <ARKit.Light
+            position={{ x: 1, y: 3, z: 2 }}
+            type={ARKit.LightType.Omni}
+            color="white"
+          />
+
           <PlaneCursor
             projectPosition={{
               x: windowWidth / 2,
@@ -140,7 +162,6 @@ export default class ReactNativeARKit extends Component {
                 const filtered = results.filter(r =>
                   r.id.startsWith('object_')
                 );
-                console.log(results, filtered);
                 // take last detected object
                 return filtered.length > 0 ? filtered[0] : null;
               }
