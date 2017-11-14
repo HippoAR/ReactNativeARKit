@@ -60,7 +60,7 @@ export default class ReactNativeARKit extends Component {
           style={{ flex: 1 }}
           debug
           planeDetection
-          lightEstimation
+          lightEstimationEnabled
           onPlaneDetected={console.log} // event listener for plane detection
           onPlaneUpdate={console.log} // event listener for plane update
         >

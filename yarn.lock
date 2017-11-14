@@ -8,9 +8,9 @@
   dependencies:
     react "15.4.2"
 
-"_PocketSVG@git+https://github.com/pocketsvg/PocketSVG.git":
+"_PocketSVG@https://github.com/pocketsvg/PocketSVG":
   version "0.0.0"
-  resolved "git+https://github.com/pocketsvg/PocketSVG.git#e6d84ddeb11f99c4420e354ebb9fd34db2cf507a"
+  resolved "https://github.com/pocketsvg/PocketSVG#e6d84ddeb11f99c4420e354ebb9fd34db2cf507a"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -3275,7 +3275,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-prop-types@^15.5.6, prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0:
+prop-types@^15.5.7, prop-types@^15.5.8, prop-types@^15.6.0:
   version "15.6.0"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.0.tgz#ceaf083022fc46b4a35f69e13ef75aed0d639856"
   dependencies:
@@ -3354,16 +3354,15 @@ react-devtools-core@^2.5.0:
     shell-quote "^1.6.1"
     ws "^2.0.3"
 
-react-native-arkit@^0.4.5:
-  version "0.4.5"
-  resolved "https://registry.yarnpkg.com/react-native-arkit/-/react-native-arkit-0.4.5.tgz#20e0e68bad8899b56ad9f0e0f17ae75df0d90839"
+react-native-arkit@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/react-native-arkit/-/react-native-arkit-0.5.0.tgz#9fd996e43a71e7396e0c081768d188c7a5ed8874"
   dependencies:
     "@panter/react-animation-frame" "^0.3.7"
     "_PocketSVG" "https://github.com/pocketsvg/PocketSVG"
     fast-deep-equal "^1.0.0"
     lodash "^4.17.4"
     prop-types "^15.5.7"
-    react "16.0.0-alpha.12"
 
 react-native@0.50.3:
   version "0.50.3"
@@ -3463,16 +3462,6 @@ react@16.0.0:
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
-
-react@16.0.0-alpha.12:
-  version "16.0.0-alpha.12"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.0.0-alpha.12.tgz#8c59485281485df319b6f77682d8dd0621c08194"
-  dependencies:
-    create-react-class "^15.5.2"
-    fbjs "^0.8.9"
-    loose-envify "^1.1.0"
-    object-assign "^4.1.0"
-    prop-types "^15.5.6"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"
