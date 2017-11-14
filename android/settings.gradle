@@ -1,0 +1,3 @@
+rootProject.name = 'ReactNativeARKit'
+
+include ':app'
